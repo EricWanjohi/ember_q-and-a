@@ -1,3 +1,65 @@
+hr {
+  color: black;
+}
+
+h1, h2, h3, h4, h5, .thyme {
+  font-family: 'Metal Mania', cursive;
+}
+
+p, a, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: navy;
+}
+
+.page-header > a {
+  color: white;
+}
+
+a:hover, a:focus {
+  color: rgb(212,46,37);
+  text-decoration: none;
+}
+
 li {
   list-style: none;
+}
+
+.question {
+  background-color: rgba(255, 250, 250, 0.9);
+  padding: 3%;
+  margin: 3%;
+}
+
+.page-header {
+  background-color: black;
+  text-align: center;
+  padding: 5%;
+  border-bottom: none;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(212,46,37);
+}
+
+.footer > .container {
+  margin: 20px;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1469173479606-ada03df615ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=70e6435426e4d119a4e9f84fd94d7a64);
+  -webkit-background-size: cover;
+  margin-bottom: 60px;
 }

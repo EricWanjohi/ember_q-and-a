@@ -1,8 +1,8 @@
-<p>
-  Welcome to Q&amp;A with Thyme Spenser! Madame Spenser is well known in some parts of the world as the Curse of Sewer Rats. Humans are invited to ask a question of the Vampire Community. Don't be shy! Be sure to indicate your location...
-</p>
-<ul>
-  {{#each model as |question|}}
-    <li><hr>{{question-preview question=question}}</li>
-  {{/each}}
-</ul>
+<div class="question">
+  <p>Welcome to Q&amp;A with <span class="thyme">Thyme Spenser!</span><br><br><span class="thyme">Madame Spenser</span> is well known in some parts of the world as the <span class="thyme">Curse of Sewer Rats</span>. Humans are invited to ask a question of the <span class="thyme">Vampire Community</span>. Don't be shy! Be sure to indicate your location...</p>
+  <ul>
+    {{#each model as |question|}}
+      <li><hr>{{question-preview question=question}}</li>
+    {{/each}}
+  </ul>
+</div>
