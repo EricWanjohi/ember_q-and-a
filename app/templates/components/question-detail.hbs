@@ -6,4 +6,11 @@
 
   <h5>Location:</h5>
   <p>{{question.location}}</p>
+
+  <h4>Answers from the Vampire Community</h4>
+  <p>
+    {{#each question.answers as |answer|}}
+      {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
+    {{/each}}
+  </p>
 </div>
