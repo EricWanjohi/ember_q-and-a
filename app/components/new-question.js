@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         question: this.get('question'),
         notes: this.get('notes'),
-        location: this.get('location')
+        city: this.get('city')
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);

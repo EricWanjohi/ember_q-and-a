@@ -1,13 +1,20 @@
 <div class="question">
   <button {{action 'delete' question}}>Delete Question</button>
-  <h3>{{question.question}}</h3>
-  <p>Asked by: {{question.author}}</p>
+  <hr>
+  <div class="center">
+    <h3>{{question.question}}</h3>
+    <p>Asked by: {{question.author}}</p>
+  </div>
   <p>{{question.notes}}</p>
 
   <h5>Location:</h5>
   <p>{{question.location}}</p>
 
-  <h4>Answers from the Vampire Community</h4>
+  <hr>
+  <div class="center">
+    <h4>Answers from the Vampire Community</h4>
+  </div>
+  <hr>
   <p>
     {{#each question.answers as |answer|}}
       {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
