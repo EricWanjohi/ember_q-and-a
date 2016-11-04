@@ -1,13 +1,16 @@
 .answer-button {
-  height: 100px;
-  width: 400px;
-  margin: -10px -200px;
+  height: 125px;
+  width: 125px;
+  margin: 0px -70px;
   position:relative;
-  top:50%;
-  left:50%;
-  background-color: black;
+  top: 50%;
+  left: 50%;
+  background-color: #000d1a;
   color: white;
   font-size: 20px;
+  position: relative;
+  top: -60px;
+  border-radius: 200px;
 }
 
 button {
@@ -52,12 +55,15 @@ li {
   background-color: rgba(255, 250, 250, 0);
   padding: 3%;
   margin: 3%;
+  position: relative;
 }
 
 .question {
   background-color: rgba(255, 250, 250, 0.9);
   padding: 3%;
   margin: 3%;
+  position: relative;
+  top: -60px;
 }
 
 .page-header {
@@ -65,28 +71,19 @@ li {
   text-align: center;
   padding: 5%;
   border-bottom: none;
+  position: relative;
+  top: -60px;
 }
-
 
 html {
   position: relative;
   min-height: 100%;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: rgb(212,46,37);
-}
-
-.footer > .container {
-  margin: 20px;
-}
-
 body {
-  background: url(https://images.unsplash.com/photo-1469173479606-ada03df615ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=70e6435426e4d119a4e9f84fd94d7a64) no-repeat left center fixed;;
-  -webkit-background-size: cover;
+  background-color: black;
+
+  /*background: url(https://images.unsplash.com/photo-1469173479606-ada03df615ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=70e6435426e4d119a4e9f84fd94d7a64) no-repeat left center fixed;;
+  -webkit-background-size: cover;*/
   margin-bottom: 60px;
 }
