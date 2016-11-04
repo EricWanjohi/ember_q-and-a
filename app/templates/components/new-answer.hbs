@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-  <div class="question">
+  <div class="question answer-form">
     <h4>New Answer</h4>
     <form>
       <div class="form-group">
@@ -8,14 +8,12 @@
       </div>
       <div class="form-group">
         <label for="answer">Your Answer</label>
-        {{input value=answer id="answer"}}
+        {{textarea class="form-control" rows="3" value=answer id="answer"}}
       </div>
       <button {{action 'saveAnswer'}}>Save</button>
       <button {{action 'cancel'}}>Cancel</button>
     </form>
   </div>
 {{else}}
-  <div class="answer answer">
-    <button {{action 'answerFormShow'}}>New Answer</button>
-  </div>
+  <button class="answer-button" {{action 'answerFormShow'}}>Vampire, Answer the Human</button>
 {{/if}}

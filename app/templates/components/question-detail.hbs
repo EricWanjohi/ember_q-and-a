@@ -1,5 +1,4 @@
 <div class="question">
-  <button {{action 'delete' question}}>Delete Question</button>
   <hr>
   <div class="center">
     <h3>{{question.question}}</h3>
@@ -8,7 +7,7 @@
   <p>{{question.notes}}</p>
 
   <h5>Location:</h5>
-  <p>{{question.location}}</p>
+  <p>{{question.city}}</p>
 
   <hr>
   <div class="center">
@@ -21,3 +20,5 @@
     {{/each}}
   </p>
 </div>
+
+<button {{action 'delete' question}}>Delete Question</button>

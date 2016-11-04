@@ -2,17 +2,17 @@
   "questions": [{
     "question": "Why are vampire teeth so pointy?",
     "author": "Megan N",
-    "location": "Portland, OR",
+    "city": "Portland, OR",
     "notes": "Megan is a 25 year old landscape architechture marketer from Portland, OR. While her neck is soft and long, but don't assume she won't put up a good fight!"
   }, {
     "question": "Where do vampires originate?",
     "author": "Jon B",
-    "location": "Chicago, IL",
+    "city": "Chicago, IL",
     "notes": "Jon is a civil engineer from Chicago, IL. His desk job makes his shoulders particularly tough, so make sure to aim higher. He's a type 0 negative, friends, enjoy!"
   }, {
     "question": "Do vampires dream?",
     "author": "Sara J",
-    "location": "Chicago, IL",
+    "city": "Chicago, IL",
     "notes": "Sara is a 30 year old software programmer from Chicago, IL living in Portland, OR. Nurses tell her she has deep veins, so you're really going to have to get in there. There's some good ones on her forearms from her rock climbing hobby, though!"
   }]
 }

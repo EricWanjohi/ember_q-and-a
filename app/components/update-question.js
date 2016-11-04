@@ -9,15 +9,15 @@ export default Ember.Component.extend({
     cancel() {
       this.set('updateQuestionForm', false);
     },
-    update(post) {
+    update(questionObject) {
       var params = {
         author: this.get('author'),
         question: this.get('question'),
         notes: this.get('notes'),
-        location: this.get('location'),
+        city: this.get('city'),
       };
       this.set('updateQuestionForm', false);
-      this.sendAction('update', question, params);
+      this.sendAction('update', questionObject, params);
     }
   }
 });
