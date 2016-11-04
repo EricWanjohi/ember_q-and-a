@@ -18,10 +18,10 @@
           <label for="city">Location</label>
           {{input value=city id="city" placeholder=question.city}}
         </div>
-        <button {{action 'update' question}}>Save</button>
-        <button {{action 'cancel'}}>Cancel</button>
+        <button class="btn btn-sm" {{action 'update' question}}>Save</button>
+        <button class="btn btn-sm" {{action 'cancel'}}>Cancel</button>
       </form>
     </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update Question</button>
+  <button class="btn btn-sm floating-button" {{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}

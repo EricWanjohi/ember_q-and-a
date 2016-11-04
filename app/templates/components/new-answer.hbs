@@ -10,8 +10,8 @@
         <label for="answer">Your Answer</label>
         {{textarea class="form-control" rows="3" value=answer id="answer"}}
       </div>
-      <button {{action 'saveAnswer'}}>Save</button>
-      <button {{action 'cancel'}}>Cancel</button>
+      <button class="btn btn-sm" {{action 'saveAnswer'}}>Save</button>
+      <button class="btn btn-sm" {{action 'cancel'}}>Cancel</button>
     </form>
   </div>
 {{else}}

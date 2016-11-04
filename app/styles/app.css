@@ -16,6 +16,13 @@
 button {
   margin-left: 3%;
   margin-bottom: 1%;
+  background-color: rgb(212,46,37);
+}
+
+.floating-button {
+  position: relative;
+  top: -60px;
+  margin: 2%;
 }
 
 .center {

@@ -8,7 +8,7 @@
 
   <h5>Location:</h5>
   <p>{{question.city}}</p>
-  <button {{action 'addToBookmarks' question}}>Bookmark Question</button>
+  <button class="btn btn-sm" {{action 'addToBookmarks' question}}>Bookmark Question</button>
   <hr>
   <div class="center">
     <h4>Answers from the Vampire Community</h4>
@@ -22,4 +22,4 @@
   </p>
 </div>
 
-<button {{action 'delete' question}}>Delete Question</button>
+<button class="btn btn-sm floating-button" {{action 'delete' question}}>Delete Question</button>

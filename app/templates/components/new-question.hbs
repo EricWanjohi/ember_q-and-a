@@ -19,10 +19,10 @@
         <label for="city">Location</label>
         {{input value=city id="city"}}
       </div>
-      <button {{action 'saveQuestion'}}>Save Question</button>
-      <button {{action 'cancel'}}>Cancel</button>
+      <button class="btn btn-sm" {{action 'saveQuestion'}}>Save Question</button>
+      <button class="btn btn-sm" {{action 'cancel'}}>Cancel</button>
     </form>
   </div>
   {{else}}
-    <button {{action 'questionFormShow'}}>Ask Your Question, Human</button>
+    <button class="btn btn-sm" {{action 'questionFormShow'}}>Ask Your Question, Human</button>
 {{/if}}
