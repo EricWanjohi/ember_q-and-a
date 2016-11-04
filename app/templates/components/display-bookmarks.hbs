@@ -1,5 +1,5 @@
 <div class="question">
   {{#each bookmarkQuestion.bookmarks as |bookmark|}}
-    {{bookmark.question}}
+    {{#link-to 'question' bookmark.id}}{{bookmark.question}}{{/link-to}}
   {{/each}}
 </div>
