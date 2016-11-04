@@ -1,9 +1,9 @@
+<button class="btn btn-sm floating-button" {{action 'delete' question}}>Delete Question</button>
 <hr>
 <button class="btn btn-sm bookmark-button" {{action 'addToBookmarks' question}}>Bookmark Question</button>
 <h3>{{question.question}}</h3>
 <p>Asked by: {{question.author}}</p>
 <p>{{question.notes}}</p>
-
 <h5>Location:</h5>
 <p>{{question.city}}</p>
 
@@ -12,11 +12,9 @@
   <h4>Answers from the Vampire Community</h4>
 </div>
 <hr>
-{{no-answer question}}
-<p>
-  {{#each question.answers as |answer|}}
-    {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
-  {{/each}}
-</p>
 
-<button class="btn btn-sm floating-button" {{action 'delete' question}}>Delete Question</button>
+{{no-answer question}}
+
+{{#each question.answers as |answer|}}
+  {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
+{{/each}}

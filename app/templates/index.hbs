@@ -1,4 +1,5 @@
 <div class="question">
+  <hr>
   {{new-question saveQuestion="saveQuestion"}}
 
   {{#each model as |question|}}
@@ -6,4 +7,5 @@
       <hr>{{question-preview question=question}}
     </div>
   {{/each}}
+  <hr>
 </div>

@@ -1,7 +1,11 @@
 <div class="question">
+  <hr>
   <h3>My Bookmarked Questions:</h3>
   {{noBookmark bookmarkQuestion.bookmarks}}
+  <br>
   {{#each bookmarkQuestion.bookmarks as |bookmark|}}
-    {{#link-to 'question' bookmark.id}}{{bookmark.question}}{{/link-to}}<hr>
+    <hr>
+    {{#link-to 'question' bookmark.id}}{{bookmark.question}}{{/link-to}}
   {{/each}}
+  <hr>
 </div>
