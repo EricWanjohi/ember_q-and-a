@@ -7,13 +7,18 @@ export default Ember.Route.extend({
   actions: {
     update(question, params) {
       console.log(params);
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          question.set(key, params[key]);
-        }
-      });
-      question.save();
-      this.transitionTo('question', question);
+      console.log(params.author);
+      if (!params.author || !params.notes || !params.question || !params.city) {
+        alert("Please fill out all fields to submit update this question.");
+      } else {
+        Object.keys(params).forEach(function(key) {
+          if(params[key]!==undefined) {
+            question.set(key, params[key]);
+          }
+        });
+        question.save();
+        this.transitionTo('question', question);
+      }
     },
     destroyQuestion(question) {
       var answer_deletions = question.get('answers').map(function(answer) {
@@ -39,7 +44,7 @@ export default Ember.Route.extend({
     },
     destroyAnswer(answer) {
       answer.destroyRecord();
-      this.transitionTo('question');
+      this.transitionTo('index');
     },
   }
 });
