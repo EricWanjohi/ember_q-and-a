@@ -5,5 +5,6 @@ export default Ember.Service.extend({
 
   add(question) {
     this.get('bookmarks').pushObject(question);
+    alert("Now this question can also be found in your bookmarks.")
   },
 });

@@ -11,6 +11,7 @@ export default Ember.Route.extend({
       } else {
         var newQuestion = this.store.createRecord('question', params);
         newQuestion.save();
+        alert("Thank you for submitting your question. The vampire community may or may not get back to you. It's not up to you.");
         this.transitionTo('index');
       }
     },

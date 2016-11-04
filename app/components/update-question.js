@@ -10,7 +10,6 @@ export default Ember.Component.extend({
       this.set('updateQuestionForm', false);
     },
     update(question) {
-      console.log("HERE: " + this.get('author'));
       var params = {
         author: this.get('author'),
         question: this.get('question2'),
