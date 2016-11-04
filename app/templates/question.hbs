@@ -1,3 +1,5 @@
-{{new-answer saveAnswer="saveAnswer" question=model}}
-{{question-detail question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-{{update-question question=model update="update"}}
+<div class="question">
+  {{question-detail question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+  {{update-question question=model update="update"}}
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>

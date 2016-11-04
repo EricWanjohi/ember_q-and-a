@@ -1,3 +1,10 @@
+.new-question-button {
+  margin: 0px -90px;
+  position:relative;
+  top: 50%;
+  left: 50%;
+}
+
 .answer-button {
   height: 125px;
   width: 125px;
@@ -8,29 +15,33 @@
   background-color: #000d1a;
   color: white;
   font-size: 20px;
-  top: -60px;
   border-radius: 200px;
 }
 
+.answer-button:hover {
+  background-color: black;
+}
+
 .bookmark-button {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin: 0px -70px;
+  float: right;
 }
 
 button {
   margin-left: 3%;
   margin-bottom: 1%;
-  background-color: rgb(212,46,37);
+  background-color: gray;
+  color: white;
   border: 1px solid rgb(212,46,37);
 }
 
+button:hover {
+  background-color: rgb(212,46,37);
+  color: black;
+}
+
 .floating-button {
-  position: relative;
-  top: -60px;
-  left: 12px;
-  margin: 0.5%;
+  margin: 3px;
+  background-color: lightgray;
 }
 
 .center {
@@ -38,7 +49,7 @@ button {
 }
 
 hr {
-  border-top: 1px solid black;
+  border-top: 1px solid lightgray;
 }
 
 h1, h2, h3, h4, h5, label, .thyme, .answer-button {
@@ -67,38 +78,30 @@ li {
 }
 
 .question-form {
-  background-color: rgba(255, 250, 250, 0);
+  background-color: lightgray;
+  border: solid 1px gray;
   padding: 3%;
-  margin: 3%;
-  position: relative;
+  margin: 5%;
 }
 
 .question {
-  background-color: rgba(255, 250, 250, 0.9);
+  background-color: ghostwhite;
   padding: 3%;
   margin: 3%;
-  position: relative;
-  top: -60px;
+  top: -30px;
 }
 
 .page-header {
-  background-color: black;
   text-align: center;
-  padding: 5%;
   border-bottom: none;
-  position: relative;
   top: -60px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.navbar {
+  background-color: ghostwhite;
 }
 
 body {
-  background-color: black;
-
-  /*background: url(https://images.unsplash.com/photo-1469173479606-ada03df615ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=70e6435426e4d119a4e9f84fd94d7a64) no-repeat left center fixed;;
-  -webkit-background-size: cover;*/
-  margin-bottom: 60px;
+  background: url(http://wallpapercave.com/wp/bLHpsGy.jpg) center center fixed no-repeat;
+  -webkit-background-size: cover;
 }

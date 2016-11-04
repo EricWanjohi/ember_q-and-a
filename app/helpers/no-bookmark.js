@@ -2,7 +2,8 @@ import Ember from 'ember';
 
 export function noBookmark(bookmark) {
   console.log(bookmark);
-  if (undefined != bookmark) {
+  console.log(bookmark.length);
+  if (bookmark.length < 2) {
     return Ember.String.htmlSafe('You can bookmark questions by clicking the "Bookmark Question" button on a question page.');
   }
 }
